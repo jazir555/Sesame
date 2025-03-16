@@ -27,7 +27,64 @@ and use this command in the terminal:
 Then input your access token.
 
 ----------------------------------------------------
+# Windows 11 Installation Instructions
 
+To install and run the project on Windows 11 64-bit, follow these steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone git@github.com:SesameAILabs/csm.git
+    cd csm
+    ```
+
+2. **Create and activate a virtual environment:**
+
+    ```batch
+    python -m venv myenv
+    call myenv\Scripts\activate
+    ```
+
+3. **Install the required dependencies:**
+
+    ```batch
+    pip install -r requirements.txt
+    ```
+
+4. **Run the installation script:**
+
+    We have provided a batch script `install_script.bat` to automate the setup process. You can run it by double-clicking on it or executing it from the command prompt.
+
+    ```batch
+    install_script.bat
+    ```
+
+5. **Run the script:**
+
+    After the installation is complete, you can run the script `SesameConverse.py` by executing the following command in your terminal:
+
+    ```bash
+    python SesameConverse.py
+    ```
+
+    This will start the live voice AI conversation loop. Make sure your microphone is connected and configured correctly. You can say "exit" or "quit" to end the conversation.
+
+6. **Configure the microphone:**
+
+    To configure the microphone for `SesameConverse.py`, follow these steps:
+
+    * Ensure you have the `speech_recognition` package installed, as it is required for microphone input. You can install it using the command `pip install SpeechRecognition`.
+    * Open the `SesameConverse.py` file and locate the `select_microphone` function. This function lists available microphones and allows you to select one.
+    * Run the script, and it will prompt you to select a microphone from the list of available devices. If you do not select a microphone, the default microphone will be used.
+    * The selected microphone index is stored in the `mic_index` variable, which is then used in the `recognize_speech` function to capture audio input from the selected microphone.
+
+    For more details, refer to the `SesameConverse.py` file.
+
+## Windows 11 Compatibility
+
+The project has been verified to be compatible with Windows 11 64-bit. The dependencies listed in the `requirements.txt` file are compatible with Windows 11. The provided `install_script.bat` automates the setup process, ensuring a smooth installation experience on Windows 11.
+
+--------------------------------------------
 
 # CSM
 
