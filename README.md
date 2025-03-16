@@ -34,7 +34,8 @@ To install and run the project on Windows 11 64-bit, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone git@github.com:SesameAILabs/csm.git
+    git clone https://github.com/jazir555/SesameConverse.git
+
     cd csm
     ```
 
