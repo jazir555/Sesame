@@ -54,7 +54,7 @@ To install and run the project on Windows 11 64-bit, follow these steps:
 
 4. **Run the installation script:**
 
-    We have provided a batch script `install_script.bat` to automate the setup process. You can run it by double-clicking on it or executing it from the command prompt.
+    Run the batch script `install_script.bat` to automate the setup process. You can run it by double-clicking on it or executing it from the command prompt.
 
     ```batch
     install_script.bat
